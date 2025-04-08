@@ -12,7 +12,7 @@ export default function QueroDoar() {
 
     const enviarDados = async()=>{
         
-        const urlApi = "https://projetoapi-ix8o.onrender.com" 
+        const urlApi = "https://projetoapi-ix8o.onrender.com/doar" 
 
         const dadosEnviar = {
             titulo,
@@ -53,7 +53,7 @@ export default function QueroDoar() {
         <section className={S.principal}>
             <section className={S.container}>
                 <h2>Por favor, preencha o formulário com suas informações e as informações do Livro</h2>
-                <form onSubmit={(e)=> e.preventDefault}>
+                <form onSubmit={(e)=> e.preventDefault()}>
                     <div>
                         <img src={livro} alt="" />
                         <h3>Informações do Livro</h3>
